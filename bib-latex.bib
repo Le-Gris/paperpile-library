@@ -405,31 +405,41 @@
   note         = "Accessed: 2023-3-9"
 }
 
-@INPROCEEDINGS{Madhushani2020-ah,
-  title     = "A Dynamic Observation Strategy for Multi-agent Multi-armed
-               Bandit Problem",
-  booktitle = "2020 European Control Conference ({ECC})",
-  author    = "Madhushani, Udari and Leonard, Naomi Ehrich",
-  abstract  = "We define and analyze a multi-agent multi-armed bandit problem
-               in which decision-making agents can observe the choices and
-               rewards of their neighbors under a linear observation cost.
-               Neighbors are defined by a network graph that encodes the
-               inherent observation constraints of the system. We define a cost
-               associated with observations such that at every instance an
-               agent makes an observation it receives a constant observation
-               regret. We design a sampling algorithm and an observation
-               protocol for each agent to maximize its own expected cumulative
-               reward through minimizing expected cumulative sampling regret
-               and expected cumulative observation regret. For our proposed
-               protocol, we prove that total cumulative regret is
-               logarithmically bounded. We verify the accuracy of analytical
-               bounds using numerical simulations.",
-  pages     = "1677--1682",
-  month     =  may,
-  year      =  2020,
-  keywords  = "Random variables;Uncertainty;Protocols;Upper bound;Decision
-               making;Numerical simulation;Estimation",
-  doi       = "10.23919/ECC51009.2020.9143736"
+@ARTICLE{Landgren2020-ri,
+  title         = "Distributed Cooperative Decision Making in Multi-agent
+                   Multi-armed Bandits",
+  author        = "Landgren, Peter and Srivastava, Vaibhav and Leonard, Naomi
+                   Ehrich",
+  abstract      = "We study a distributed decision-making problem in which
+                   multiple agents face the same multi-armed bandit (MAB), and
+                   each agent makes sequential choices among arms to maximize
+                   its own individual reward. The agents cooperate by sharing
+                   their estimates over a fixed communication graph. We
+                   consider an unconstrained reward model in which two or more
+                   agents can choose the same arm and collect independent
+                   rewards. And we consider a constrained reward model in which
+                   agents that choose the same arm at the same time receive no
+                   reward. We design a dynamic, consensus-based, distributed
+                   estimation algorithm for cooperative estimation of mean
+                   rewards at each arm. We leverage the estimates from this
+                   algorithm to develop two distributed algorithms: coop-UCB2
+                   and coop-UCB2-selective-learning, for the unconstrained and
+                   constrained reward models, respectively. We show that both
+                   algorithms achieve group performance close to the
+                   performance of a centralized fusion center. Further, we
+                   investigate the influence of the communication graph
+                   structure on performance. We propose a novel graph
+                   explore-exploit index that predicts the relative performance
+                   of groups in terms of the communication graph, and we
+                   propose a novel nodal explore-exploit centrality index that
+                   predicts the relative performance of agents in terms of the
+                   agent locations in the communication graph.",
+  month         =  mar,
+  year          =  2020,
+  archivePrefix = "arXiv",
+  eprint        = "2003.01312",
+  primaryClass  = "math.OC",
+  arxivid       = "2003.01312"
 }
 
 @ARTICLE{Wellman_undated-aj,
@@ -2287,6 +2297,33 @@
   keywords  = "learning\&memory2023",
   issn      = "0022-1015",
   doi       = "10.1037/h0053944"
+}
+
+@INPROCEEDINGS{Madhushani2020-ah,
+  title     = "A Dynamic Observation Strategy for Multi-agent Multi-armed
+               Bandit Problem",
+  booktitle = "2020 European Control Conference ({ECC})",
+  author    = "Madhushani, Udari and Leonard, Naomi Ehrich",
+  abstract  = "We define and analyze a multi-agent multi-armed bandit problem
+               in which decision-making agents can observe the choices and
+               rewards of their neighbors under a linear observation cost.
+               Neighbors are defined by a network graph that encodes the
+               inherent observation constraints of the system. We define a cost
+               associated with observations such that at every instance an
+               agent makes an observation it receives a constant observation
+               regret. We design a sampling algorithm and an observation
+               protocol for each agent to maximize its own expected cumulative
+               reward through minimizing expected cumulative sampling regret
+               and expected cumulative observation regret. For our proposed
+               protocol, we prove that total cumulative regret is
+               logarithmically bounded. We verify the accuracy of analytical
+               bounds using numerical simulations.",
+  pages     = "1677--1682",
+  month     =  may,
+  year      =  2020,
+  keywords  = "Random variables;Uncertainty;Protocols;Upper bound;Decision
+               making;Numerical simulation;Estimation",
+  doi       = "10.23919/ECC51009.2020.9143736"
 }
 
 @ARTICLE{Moradipari2022-uu,
