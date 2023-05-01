@@ -405,36 +405,31 @@
   note         = "Accessed: 2023-3-9"
 }
 
-@ARTICLE{Moradipari2022-uu,
-  title         = "Collaborative Multi-agent Stochastic Linear Bandits",
-  author        = "Moradipari, Ahmadreza and Ghavamzadeh, Mohammad and
-                   Alizadeh, Mahnoosh",
-  abstract      = "We study a collaborative multi-agent stochastic linear
-                   bandit setting, where $N$ agents that form a network
-                   communicate locally to minimize their overall regret. In
-                   this setting, each agent has its own linear bandit problem
-                   (its own reward parameter) and the goal is to select the
-                   best global action w.r.t. the average of their reward
-                   parameters. At each round, each agent proposes an action,
-                   and one action is randomly selected and played as the
-                   network action. All the agents observe the corresponding
-                   rewards of the played actions and use an accelerated
-                   consensus procedure to compute an estimate of the average of
-                   the rewards obtained by all the agents. We propose a
-                   distributed upper confidence bound (UCB) algorithm and prove
-                   a high probability bound on its $T$-round regret in which we
-                   include a linear growth of regret associated with each
-                   communication round. Our regret bound is of order
-                   $\mathcal\{O\}\Big(\sqrt\{\frac\{T\}\{N
-                   \log(1/|\lambda_2|)\}\}\cdot (\log T)^2\Big)$, where
-                   $\lambda_2$ is the second largest (in absolute value)
-                   eigenvalue of the communication matrix.",
-  month         =  may,
-  year          =  2022,
-  archivePrefix = "arXiv",
-  eprint        = "2205.06331",
-  primaryClass  = "cs.LG",
-  arxivid       = "2205.06331"
+@INPROCEEDINGS{Madhushani2020-ah,
+  title     = "A Dynamic Observation Strategy for Multi-agent Multi-armed
+               Bandit Problem",
+  booktitle = "2020 European Control Conference ({ECC})",
+  author    = "Madhushani, Udari and Leonard, Naomi Ehrich",
+  abstract  = "We define and analyze a multi-agent multi-armed bandit problem
+               in which decision-making agents can observe the choices and
+               rewards of their neighbors under a linear observation cost.
+               Neighbors are defined by a network graph that encodes the
+               inherent observation constraints of the system. We define a cost
+               associated with observations such that at every instance an
+               agent makes an observation it receives a constant observation
+               regret. We design a sampling algorithm and an observation
+               protocol for each agent to maximize its own expected cumulative
+               reward through minimizing expected cumulative sampling regret
+               and expected cumulative observation regret. For our proposed
+               protocol, we prove that total cumulative regret is
+               logarithmically bounded. We verify the accuracy of analytical
+               bounds using numerical simulations.",
+  pages     = "1677--1682",
+  month     =  may,
+  year      =  2020,
+  keywords  = "Random variables;Uncertainty;Protocols;Upper bound;Decision
+               making;Numerical simulation;Estimation",
+  doi       = "10.23919/ECC51009.2020.9143736"
 }
 
 @ARTICLE{Wellman_undated-aj,
@@ -2292,6 +2287,38 @@
   keywords  = "learning\&memory2023",
   issn      = "0022-1015",
   doi       = "10.1037/h0053944"
+}
+
+@ARTICLE{Moradipari2022-uu,
+  title         = "Collaborative Multi-agent Stochastic Linear Bandits",
+  author        = "Moradipari, Ahmadreza and Ghavamzadeh, Mohammad and
+                   Alizadeh, Mahnoosh",
+  abstract      = "We study a collaborative multi-agent stochastic linear
+                   bandit setting, where $N$ agents that form a network
+                   communicate locally to minimize their overall regret. In
+                   this setting, each agent has its own linear bandit problem
+                   (its own reward parameter) and the goal is to select the
+                   best global action w.r.t. the average of their reward
+                   parameters. At each round, each agent proposes an action,
+                   and one action is randomly selected and played as the
+                   network action. All the agents observe the corresponding
+                   rewards of the played actions and use an accelerated
+                   consensus procedure to compute an estimate of the average of
+                   the rewards obtained by all the agents. We propose a
+                   distributed upper confidence bound (UCB) algorithm and prove
+                   a high probability bound on its $T$-round regret in which we
+                   include a linear growth of regret associated with each
+                   communication round. Our regret bound is of order
+                   $\mathcal\{O\}\Big(\sqrt\{\frac\{T\}\{N
+                   \log(1/|\lambda_2|)\}\}\cdot (\log T)^2\Big)$, where
+                   $\lambda_2$ is the second largest (in absolute value)
+                   eigenvalue of the communication matrix.",
+  month         =  may,
+  year          =  2022,
+  archivePrefix = "arXiv",
+  eprint        = "2205.06331",
+  primaryClass  = "cs.LG",
+  arxivid       = "2205.06331"
 }
 
 @ARTICLE{Sharma2021-xf,
