@@ -4246,47 +4246,6 @@
   language  = "en"
 }
 
-@ARTICLE{Hoffman2011-qq,
-  title     = "The No-{U}-turn sampler: adaptively setting path lengths in
-               Hamiltonian Monte Carlo",
-  author    = "Hoffman, M and Gelman, A",
-  journal   = "Journal of machine learning research: JMLR",
-  publisher = "JMLR.orgPUB6573",
-  volume    =  15,
-  pages     = "1593--1623",
-  abstract  = "Hamiltonian Monte Carlo (HMC) is a Markov chain Monte Carlo
-               (MCMC) algorithm that avoids the random walk behavior and
-               sensitivity to correlated parameters that plague many MCMC
-               methods by taking a series of steps informed by first-order
-               gradient information. These features allow it to converge to
-               high-dimensional target distributions much more quickly than
-               simpler methods such as random walk Metropolis or Gibbs sampling.
-               However, HMC's performance is highly sensitive to two
-               user-specified parameters: a step size {\epsilon} and a desired
-               number of steps L. In particular, if L is too small then the
-               algorithm exhibits undesirable random walk behavior, while if L
-               is too large the algorithm wastes computation. We introduce the
-               No-U-Turn Sampler (NUTS), an extension to HMC that eliminates the
-               need to set a number of steps L. NUTS uses a recursive algorithm
-               to build a set of likely candidate points that spans a wide swath
-               of the target distribution, stopping automatically when it starts
-               to double back and retrace its steps. Empirically, NUTS perform
-               at least as efficiently as and sometimes more efficiently than a
-               well tuned standard HMC method, without requiring user
-               intervention or costly tuning runs. We also derive a method for
-               adapting the step size parameter {\epsilon} on the fly based on
-               primal-dual averaging. NUTS can thus be used with no hand-tuning
-               at all. NUTS is also suitable for applications such as BUGS-style
-               automatic inference engines that require efficient ``turnkey''
-               sampling algorithms.",
-  month     =  nov,
-  year      =  2011,
-  eprint    = "1111.4246",
-  doi       = "10.5555/2627435.2638586",
-  issn      = "1532-4435,1533-7928",
-  language  = "en"
-}
-
 @MISC{Anthropic2024-zl,
   title        = "Claude 3.5 Sonnet Model Card Addendum",
   author       = "{Anthropic}",
