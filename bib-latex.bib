@@ -16808,6 +16808,84 @@
   eprint        = "2006.11239"
 }
 
+@ARTICLE{Chi2023-kr,
+  title         = "Diffusion Policy: Visuomotor policy learning via action
+                   diffusion",
+  author        = "Chi, Cheng and Xu, Zhenjia and Feng, Siyuan and Cousineau,
+                   Eric and Du, Yilun and Burchfiel, Benjamin and Tedrake, Russ
+                   and Song, Shuran",
+  journal       = "arXiv [cs.RO]",
+  abstract      = "This paper introduces Diffusion Policy, a new way of
+                   generating robot behavior by representing a robot's
+                   visuomotor policy as a conditional denoising diffusion
+                   process. We benchmark Diffusion Policy across 12 different
+                   tasks from 4 different robot manipulation benchmarks and find
+                   that it consistently outperforms existing state-of-the-art
+                   robot learning methods with an average improvement of 46.9\%.
+                   Diffusion Policy learns the gradient of the
+                   action-distribution score function and iteratively optimizes
+                   with respect to this gradient field during inference via a
+                   series of stochastic Langevin dynamics steps. We find that
+                   the diffusion formulation yields powerful advantages when
+                   used for robot policies, including gracefully handling
+                   multimodal action distributions, being suitable for
+                   high-dimensional action spaces, and exhibiting impressive
+                   training stability. To fully unlock the potential of
+                   diffusion models for visuomotor policy learning on physical
+                   robots, this paper presents a set of key technical
+                   contributions including the incorporation of receding horizon
+                   control, visual conditioning, and the time-series diffusion
+                   transformer. We hope this work will help motivate a new
+                   generation of policy learning techniques that are able to
+                   leverage the powerful generative modeling capabilities of
+                   diffusion models. Code, data, and training details is
+                   publicly available diffusion-policy.cs.columbia.edu",
+  month         =  mar,
+  year          =  2023,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.RO",
+  eprint        = "2303.04137"
+}
+
+@ARTICLE{Kamath2021-wx,
+  title         = "{MDETR} -- modulated detection for end-to-end multi-modal
+                   understanding",
+  author        = "Kamath, Aishwarya and Singh, Mannat and LeCun, Yann and
+                   Synnaeve, Gabriel and Misra, Ishan and Carion, Nicolas",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Multi-modal reasoning systems rely on a pre-trained object
+                   detector to extract regions of interest from the image.
+                   However, this crucial module is typically used as a black
+                   box, trained independently of the downstream task and on a
+                   fixed vocabulary of objects and attributes. This makes it
+                   challenging for such systems to capture the long tail of
+                   visual concepts expressed in free form text. In this paper we
+                   propose MDETR, an end-to-end modulated detector that detects
+                   objects in an image conditioned on a raw text query, like a
+                   caption or a question. We use a transformer-based
+                   architecture to reason jointly over text and image by fusing
+                   the two modalities at an early stage of the model. We
+                   pre-train the network on 1.3M text-image pairs, mined from
+                   pre-existing multi-modal datasets having explicit alignment
+                   between phrases in text and objects in the image. We then
+                   fine-tune on several downstream tasks such as phrase
+                   grounding, referring expression comprehension and
+                   segmentation, achieving state-of-the-art results on popular
+                   benchmarks. We also investigate the utility of our model as
+                   an object detector on a given label set when fine-tuned in a
+                   few-shot setting. We show that our pre-training approach
+                   provides a way to handle the long tail of object categories
+                   which have very few labelled instances. Our approach can be
+                   easily extended for visual question answering, achieving
+                   competitive performance on GQA and CLEVR. The code and models
+                   are available at https://github.com/ashkamath/mdetr.",
+  month         =  apr,
+  year          =  2021,
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  eprint        = "2104.12763"
+}
+
 @ARTICLE{Chollet2019-di,
   title         = "On the {measure} of {intelligence}",
   author        = "Chollet, François",
